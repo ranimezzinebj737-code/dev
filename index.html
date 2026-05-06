@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>DSI Universe</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<h1>✨ DSI Universe ✨</h1>
+
+<!-- MENU -->
+<div class="menu">
+    <button onclick="showSection('info')">📌 Informations</button>
+    <button onclick="showSection('quiz')">🚀 Quiz</button>
+</div>
+
+<!-- 📌 INFO -->
+<div id="info" class="section">
+
+    <h2 onclick="toggle('dsi')">📌 Qu'est-ce que DSI ?</h2>
+    <p id="dsi" class="content">
+        Le DSI (Développement des Systèmes d’Information) consiste à organiser et construire des systèmes informatiques permettant de :
+
+            - collecter l’information
+            - la stocker
+            - la traiter
+            - la distribuer efficacement
+
+        Il combine la programmation, les bases de données, les réseaux et l’analyse des besoins.
+
+     </p>
+
+    <h2 onclick="toggle('obj')">🎯 Objectifs de la formation</h2>
+    <p id="obj" class="content">
+        - développer des systèmes informatiques fiables<br>
+        - apprendre la programmation et le développement logiciel<br>
+        - gérer les bases de données<br>
+        - comprendre les réseaux et la sécurité<br>
+        - analyser les besoins des utilisateurs<br>
+        - travailler en équipe sur des projets informatiques
+    </p>
+
+    <h2 onclick="toggle('comp')">Compétences acquises</h2>
+    <p id="comp" class="content">
+        À la fin de la formation, l’étudiant sera capable de :<br>
+        - concevoir des systèmes d’information<br>
+        - développer des applications web et mobiles<br>
+        - gérer des bases de données<br>
+        - analyser et résoudre des problèmes techniques
+    </p>
+    <h2 onclick="toggle('mat')">📚Matières étudiées</h2>
+    <p id="mat" class="content">
+        Les principaux modules sont :<br>
+        - Algorithmique et programmation (C, Java, Python)<br>
+        - Bases de données (SQL)<br>
+        - Développement web (HTML, CSS, JavaScript)<br>
+        - Analyse et conception des systèmes d’information
+    </p>
+    <h2 onclick="toggle('met')">💼 Métiers visés</h2>
+    <p id="met" class="content">
+        Le DSI permet d’accéder à plusieurs métiers :<br>
+        - Chef de projet informatique<br>
+        - Testeur logiciel <br>
+        - Analyste de systèmes d’information<br>
+        - 
+    </p>
+    <h2 onclick="toggle('tech')">⚙️ Technologies utilisées</h2>
+    <p id="tech" class="content">
+        Les outils utilisés dans ce domaine :<br>
+        - Langages : C, Java, Python, JavaScript<br>
+        - Bases de données : MySQL, Oracle<br>
+        - Outils : Visual Studio Code, NetBeans<br>
+        - Frameworks web
+    </p>
+    <h2 onclick="toggle('imp')">Importance du DSI</h2>
+    <p id="imp" class="content">
+        Le développement des systèmes d’information est essentiel car il permet :<br>
+        - l’automatisation des entreprises<br>
+        - la gestion efficace des données<br>
+        - le développement des applications modernes<br>
+        - la digitalisation des services
+    </p>
+    <h2 onclick="toggle('ex')">🧪 9. Exemples de projets</h2>
+    <p id="ex" class="content">
+        - système de gestion scolaire<br>
+        - application de gestion de stock<br>
+        - site web e-commerce<br>
+        - système de réservation en ligne
+    </p>
+    <h2 onclick="toggle('av')">Avantages du domaine</h2>
+    <p id="av" class="content">
+        - forte demande sur le marché du travail<br>
+        - évolution rapide des technologies<br>
+        - possibilité de travailler à distance<br>
+        - possibilité de travailler à distance
+    </p>
+    <h2 onclick="toggle('so')">📖 Sources d’information</h2>
+    <p id="so" class="content">
+     Les informations sont basées sur des sources fiables :<br>
+        - https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27information<br>
+        -https://openclassrooms.com<br>
+        - https://www.developpez.com<br>
+        - Cours universitaires et documentation en systèmes d’information
+    </p>
+    
+</div>
+
+<!-- 🚀 QUIZ -->
+<div id="quiz" class="section hidden">
+
+    <h2>🚀 Quiz DSI</h2>
+
+    <p>1. Que signifie DSI :</p>
+    <button onclick="answer(true)">A. Développement des Systèmes d’Information</button>
+    <button onclick="answer(false)">B. Digital Software Internet</button>
+    <button onclick="answer(false)">C.  Data System Integration</button>
+    <button onclick="answer(false)">D Design System Interface</button>
+    <p>2. Un système d’information est :</p>
+    <button onclick="answer(false)">A. Un jeu vidéo</button>
+    <button onclick="answer(true)">B. Un ensemble organisé de ressources pour traiter l’information</button>
+    <button onclick="answer(false)">C. Un logiciel de dessin </button>
+    <button onclick="answer(false)">D. Un ordinateur uniquement</button>
+    <p>3. L’objectif principal d’un système d’information est :</p>
+    <button onclick="answer(false)">Jouer</button>
+    <button onclick="answer(true)">Stocker et traiter l’information</button>
+    <button onclick="answer(false)">Imprimer des documents</button>
+    <button onclick="answer(false)">Coder des jeux</button>
+
+    <p>4. SQL sert à :</p>
+    <button onclick="answer(false)">Créer des jeux</button>
+    <button onclick="answer(false)">Naviguer sur internet</button>
+    <button onclick="answer(true)">Gérer les bases de données</button>
+    <button onclick="answer(false)">Modifier le matériel</button>
+    <p>5. Une base de données est :</p>
+    <button onclick="answer(false)">Un logiciel de musique</button>
+    <button onclick="answer(false)">Un navigateur</button>
+    <button onclick="answer(true)">Un logiciel de musique</button>
+    <button onclick="answer(false)">Un système d’exploitation</button>
+    <p>6. Une donnée est :</p>
+    <button onclick="answer(true)">Une valeur brute non traitée</button>
+    <button onclick="answer(false)">Une information traitée</button>
+    <button onclick="answer(false)">Un programme</button>
+    <button onclick="answer(false)">Un site web</button>
+    <p>7. Quel élément n’est PAS un composant d’un système d’information :</p>
+    <button onclick="answer(false)">Matériel</button>
+    <button onclick="answer(false)">Logiciel</button>
+    <button onclick="answer(false)">Utilisateur</button>
+    <button onclick="answer(true)">Jeu vidéo</button>
+    <p>8. Un algorithme est :</p>
+    <button onclick="answer(false)">Un langage de programmation</button>
+    <button onclick="answer(true)">Une suite d’instructions logiques pour résoudre un problème</button>
+    <button onclick="answer(false)">Un ordinateur</button>
+    <button onclick="answer(false)">Une base de données</button>
+    <p>9. Un développeur backend travaille sur:</p>
+    <button onclick="answer(false)">Interface utilisateur</button>
+    <button onclick="answer(true)">Partie serveur et logique de l’application</button>
+    <button onclick="answer(false)">Design uniquement</button>
+    <button onclick="answer(false)">Imprimantes</button>
+    <p>10. Le Big Data se caractérise par :</p>
+    <button onclick="answer(false)">Petites données</button>
+    <button onclick="answer(false)">Données sans internet</button>
+    <button onclick="answer(false)">Données fixes</button>
+    <button onclick="answer(true)">Volume, vitesse et variété des données</button>
+    
+
+    <h3 id="result">Score: 0</h3>
+
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

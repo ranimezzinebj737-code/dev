@@ -1,0 +1,99 @@
+/* 🌌 BACKGROUND */
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #000000, #0b0b2b, #2a0a3d);
+    color: white;
+    text-align: center;
+    overflow-x: hidden; /* مهم */
+}
+
+/* 🌠 STAR LAYER */
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* ✨ STAR */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: moveStars linear infinite;
+}
+
+@keyframes moveStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+}
+
+/* 🧠 TITLE */
+h1 {
+    color: #b56cff;
+    text-shadow: 0 0 20px #7a2cff;
+}
+
+/* 📌 MENU */
+.menu {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #7a2cff, #00c3ff);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* 📄 SECTIONS */
+.section {
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+/* ❌ hide */
+.hidden {
+    display: none;
+}
+
+/* 📌 TITLES CLICKABLE */
+h2 {
+    cursor: pointer;
+    color: #7dd3ff;
+    margin-top: 20px;
+}
+
+h2:hover {
+    color: #b56cff;
+}
+
+/* 📦 CONTENT BOX */
+.content {
+    display: none;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    margin: 10px auto;
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* ❌ IMPORTANT: remove scroll-snap + overflow hidden */
+html {
+    scroll-behavior: smooth;
+}
